@@ -1,0 +1,30 @@
+.region-card:nth-child(2),
+.region-card:nth-child(3),
+.region-card:nth-child(6),
+.region-card:nth-child(7),
+.region-card:nth-child(10),
+.region-card:nth-child(11),
+.region-card:nth-child(14),
+.region-card:nth-child(15) {
+  background-color: var(--main-alt-color);
+}
+
+.region-card__img {
+  max-height: 7em;
+  max-width: 7em;
+  opacity: 0.5;
+}
+
+.region-card {
+  width: 50%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+
+.region-card__name {
+  text-align: right;
+  text-transform: uppercase;
+}

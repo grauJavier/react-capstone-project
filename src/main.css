@@ -1,0 +1,110 @@
+@import url('https://fonts.cdnfonts.com/css/gill-sans-mt-2');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --body-font: 'Gill Sans MT', sans-serif;
+  --control-font: 'Lato', sans-serif;
+  --main-color: #4369b2;
+  --main-alt-color: #3e61a4;
+  --bright-color: #5586e2;
+  --dark-color: #35548b;
+  --font-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--font-color);
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--body-font);
+}
+
+h4 {
+  font-family: var(--control-font);
+}
+
+.nav {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2em;
+}
+
+.nav__title {
+  font-family: var(--control-font);
+  font-weight: 200;
+  text-transform: lowercase;
+  font-size: 1em;
+}
+
+.header {
+  background-color: var(--bright-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  padding: 1em;
+}
+
+.header__img {
+  max-height: 20vh;
+  opacity: 0.5;
+}
+
+.header__name {
+  text-transform: uppercase;
+}
+
+.main__subtitle-container {
+  background-color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  padding: 0.3em 1em;
+}
+
+.main__subtitle {
+  font-family: var(--body-font);
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.main__section {
+  display: flex;
+  flex-wrap: wrap;
+}
