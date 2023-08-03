@@ -25,16 +25,18 @@ const RegionsCards = () => {
     fetchAirQualityData();
   }, []);
 
+  const AirQualityData = (latitude, longitude) => {
+    return useSelector((state) => state.airQuality.location[`${latitude},${longitude}`]);
+  };
+
   const output = region.slice(1).map((regionKey) => {
     const { img, name_short } = CHILE[regionKey];
     const latitude = CHILE[regionKey].capital.lat;
     const longitude = CHILE[regionKey].capital.lon;
 
-    const airQualityData = useSelector(
-      (state) => state.airQuality.location[`${latitude},${longitude}`]
-    );
+    const airQualityDataFromStore = AirQualityData(latitude, longitude);
 
-    const airQualityValue = airQualityData?.list[0]?.main?.aqi;
+    const airQualityValue = airQualityDataFromStore?.list[0]?.main?.aqi;
     let airQuality = '';
 
     switch (airQualityValue) {
@@ -55,7 +57,7 @@ const RegionsCards = () => {
         break;
     }
 
-    if (!airQualityData) {
+    if (!airQualityDataFromStore) {
       airQuality = <i>loading</i>;
     }
 
