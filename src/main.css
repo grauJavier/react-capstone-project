@@ -64,6 +64,12 @@ h4 {
   min-height: 2em;
 }
 
+.nav__back-arrow {
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
+}
+
 .nav__title {
   font-family: var(--control-font);
   font-weight: 200;
@@ -84,11 +90,17 @@ h4 {
 
 .header__img {
   max-height: 20vh;
+  max-width: 40vw;
   opacity: 0.5;
 }
 
 .header__name {
   text-transform: uppercase;
+}
+
+.header__stats {
+  font-family: var(--control-font);
+  font-weight: 200;
 }
 
 .main__subtitle-container {

@@ -7,7 +7,7 @@ const Regions = () => {
   return (
     <>
       <nav className='nav'>
-        <h1 className='nav__title'>Air Pollution</h1>
+        <h1 className='nav__title'>Air Pollution - Chile - Regions</h1>
       </nav>
       <header className='header'>
         <img src={locationData.img} className='header__img' />

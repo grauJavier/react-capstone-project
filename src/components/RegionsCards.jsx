@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchAirQuality } from '../redux/slices/airQualitySlice';
 
 import CHILE from '../redux/locationData';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import './styles/RegionsCards.css';
 
 const RegionsCards = () => {
@@ -25,7 +26,7 @@ const RegionsCards = () => {
   }, []);
 
   const output = region.slice(1).map((regionKey) => {
-    const { img, reg_nr, name } = CHILE[regionKey];
+    const { img, name_short } = CHILE[regionKey];
     const latitude = CHILE[regionKey].capital.lat;
     const longitude = CHILE[regionKey].capital.lon;
 
@@ -34,17 +35,35 @@ const RegionsCards = () => {
     );
 
     const airQualityValue = airQualityData?.list[0]?.main?.aqi;
+    let airQuality = '';
+
+    switch (airQualityValue) {
+      case 1:
+        airQuality = 'Good';
+        break;
+      case 2:
+        airQuality = 'Fair';
+        break;
+      case 3:
+        airQuality = 'Moderate';
+        break;
+      case 4:
+        airQuality = 'Poor';
+        break;
+      case 5:
+        airQuality = 'Very Poor';
+        break;
+    }
 
     return (
-        <Link to={`/cities/${regionKey}`} key={regionKey} className="region-card">
-          <img src={img} className="region-card__img" alt={name} />
-          <div>
-            <h3 className="region-card__name">
-              {reg_nr} {name}
-            </h3>
-            <h4 className="region-card__stats">Air Quality: {airQualityValue}</h4>
-          </div>
-        </Link>
+      <Link to={`/details/${regionKey}/`} key={regionKey} className="region-card">
+        <BsArrowRightCircle />
+        <img src={img} className="region-card__img" alt={name_short} />
+        <div className="region-card__stats-container">
+          <h3 className="region-card__name">{name_short}</h3>
+          <h4 className="region-card__stats">Air Quality · {airQuality}</h4>
+        </div>
+      </Link>
     );
   });
 
