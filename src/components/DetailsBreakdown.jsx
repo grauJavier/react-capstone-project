@@ -1,9 +1,10 @@
 import './styles/DetailsBreakdown.css';
+import PropTypes from 'prop-types';
 
 const DetailsBreakdown = ({ data }) => {
   if (!data || !data.list || data.list.length === 0) {
     return (
-      <div class="lds-ellipsis">
+      <div className="lds-ellipsis">
         <div></div>
         <div></div>
         <div></div>
@@ -89,6 +90,25 @@ const DetailsBreakdown = ({ data }) => {
       </div>
     </>
   );
+};
+
+DetailsBreakdown.propTypes = {
+  data: PropTypes.shape({
+    list: PropTypes.arrayOf(
+      PropTypes.shape({
+        components: PropTypes.shape({
+          so2: PropTypes.number.isRequired,
+          no2: PropTypes.number.isRequired,
+          pm10: PropTypes.number.isRequired,
+          pm2_5: PropTypes.number.isRequired,
+          o3: PropTypes.number.isRequired,
+          co: PropTypes.number.isRequired,
+          nh3: PropTypes.number.isRequired,
+          no: PropTypes.number.isRequired,
+        }).isRequired,
+      })
+    ),
+  }),
 };
 
 export default DetailsBreakdown;

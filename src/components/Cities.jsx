@@ -13,7 +13,7 @@ const Cities = () => {
   const region = useParams();
   const REGION_DATA = CHILE[region.name];
   const latitude = REGION_DATA.capital.lat;
-  const longitude = REGION_DATA.capital.lon;;
+  const longitude = REGION_DATA.capital.lon;
 
   const airQualityData = useSelector(
     (state) => state.airQuality.location[`${latitude},${longitude}`]
