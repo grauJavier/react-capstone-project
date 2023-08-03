@@ -1,14 +1,14 @@
+import { MdArrowBackIosNew } from 'react-icons/md';
+import { FaCity } from 'react-icons/fa';
+import './styles/Details.css';
+
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { fetchAirQuality } from '../redux/slices/airQualitySlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { fetchAirQuality } from '../redux/slices/airQualitySlice';
 
 import DetailsBreakdown from './DetailsBreakdown';
 import CHILE from '../redux/locationData';
-
-import './styles/Details.css';
-import { MdArrowBackIosNew } from 'react-icons/md';
-import { FaCity } from 'react-icons/fa';
 
 const Details = () => {
   useEffect(() => {
@@ -30,7 +30,7 @@ const Details = () => {
   }, []);
 
   const airQualityData = useSelector(
-    (state) => state.airQuality.location[`${latitude},${longitude}`]
+    (state) => state.airQuality.location[`${latitude},${longitude}`],
   );
 
   const airQualityValue = airQualityData?.list[0]?.main?.aqi;
@@ -52,6 +52,9 @@ const Details = () => {
     case 5:
       airQuality = 'Very Poor';
       break;
+    default:
+      airQuality = 'loading';
+      break;
   }
 
   if (!airQualityData) {
@@ -70,14 +73,18 @@ const Details = () => {
         <FaCity />
         <div>
           <h3 className="header__name">{data.city}</h3>
-          <h4 className="header__stats">Air Quality · {airQuality}</h4>
+          <h4 className="header__stats">
+            Air Quality ·
+            {airQuality}
+          </h4>
         </div>
       </header>
       <main className="main">
         <div className="main__subtitle-container">
           <h2 className="main__subtitle">Component</h2>
           <h2 style={{ fontSize: '1em' }}>
-            μg/m<sup>3</sup>
+            μg/m
+            <sup>3</sup>
           </h2>
         </div>
         <section className="main__section">

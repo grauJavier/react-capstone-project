@@ -6,12 +6,12 @@ const CitiesList = ({ region, cities }) => {
   const CITIES = Object.keys(cities);
   const output = [];
 
-  CITIES.map((cityName) => {
+  CITIES.forEach((cityName) => {
     output.push(
       <Link to={`/details/${region}/${cityName}/`} key={cityName} className="cities-list__item">
         <h3>{cityName}</h3>
         <BsArrowRightCircle />
-      </Link>
+      </Link>,
     );
   });
 
