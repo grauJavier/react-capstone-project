@@ -5,10 +5,10 @@ const DetailsBreakdown = ({ data }) => {
   if (!data || !data.list || data.list.length === 0) {
     return (
       <div className="lds-ellipsis">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
+        <div />
+        <div />
       </div>
     );
   }
@@ -19,54 +19,95 @@ const DetailsBreakdown = ({ data }) => {
     <>
       <div className="components__item">
         <h3>
-          Sulfur Dioxide{' '}
+          Sulfur Dioxide
+          {' '}
           <span>
-            (SO<sub>2</sub>)
+            (SO
+            <sub>2</sub>
+            )
           </span>
         </h3>
-        <h3>{componentsData.so2} ≤ 350</h3>
+        <h3>
+          {componentsData.so2}
+          {' '}
+          ≤ 350
+        </h3>
       </div>
       <div className="components__item">
         <h3>
-          Nitrogen Dioxide{' '}
+          Nitrogen Dioxide
+          {' '}
           <span>
-            (NO<sub>2</sub>)
+            (NO
+            <sub>2</sub>
+            )
           </span>
         </h3>
-        <h3>{componentsData.no2} ≤ 200</h3>
+        <h3>
+          {componentsData.no2}
+          {' '}
+          ≤ 200
+        </h3>
       </div>
       <div className="components__item">
         <h3>
-          Particulate Matter 10{' '}
+          Particulate Matter 10
+          {' '}
           <span>
-            (PM<sub>10</sub>)
+            (PM
+            <sub>10</sub>
+            )
           </span>
         </h3>
-        <h3>{componentsData.pm10} ≤ 200</h3>
+        <h3>
+          {componentsData.pm10}
+          {' '}
+          ≤ 200
+        </h3>
       </div>
       <div className="components__item">
         <h3>
-          Particulate Matter 2.5{' '}
+          Particulate Matter 2.5
+          {' '}
           <span>
-            (PM<sub>2.5</sub>)
+            (PM
+            <sub>2.5</sub>
+            )
           </span>
         </h3>
-        <h3>{componentsData.pm2_5} ≤ 75</h3>
+        <h3>
+          {componentsData.pm2_5}
+          {' '}
+          ≤ 75
+        </h3>
       </div>
       <div className="components__item">
         <h3>
-          Ozone{' '}
+          Ozone
+          {' '}
           <span>
-            (O<sub>3</sub>)
+            (O
+            <sub>3</sub>
+            )
           </span>
         </h3>
-        <h3>{componentsData.o3} ≤ 180</h3>
+        <h3>
+          {componentsData.o3}
+          {' '}
+          ≤ 180
+        </h3>
       </div>
       <div className="components__item">
         <h3>
-          Carbon Monoxide <span>(CO)</span>
+          Carbon Monoxide
+          {' '}
+          <span>(CO)</span>
         </h3>
-        <h3>{componentsData.co} ≤ 15400</h3>
+        <h3>
+          {componentsData.co}
+          {' '}
+          ≤ 15400
+        </h3>
       </div>
       <div className="component__subtitle-container">
         <h2 className="component__subtitle">
@@ -75,21 +116,40 @@ const DetailsBreakdown = ({ data }) => {
       </div>
       <div className="components__item">
         <h3>
-          Ammonia{' '}
+          Ammonia
+          {' '}
           <span>
-            (NH<sub>3</sub>)
+            (NH
+            <sub>3</sub>
+            )
           </span>
         </h3>
-        <h3>{componentsData.nh3} ≤ 200</h3>
+        <h3>
+          {componentsData.nh3}
+          {' '}
+          ≤ 200
+        </h3>
       </div>
       <div className="components__item">
         <h3>
-          Nitric Oxide <span>(NO)</span>
+          Nitric Oxide
+          {' '}
+          <span>(NO)</span>
         </h3>
-        <h3>{componentsData.no} ≤ 100</h3>
+        <h3>
+          {componentsData.no}
+          {' '}
+          ≤ 100
+        </h3>
       </div>
     </>
   );
+};
+
+DetailsBreakdown.defaultProps = {
+  data: {
+    list: [],
+  },
 };
 
 DetailsBreakdown.propTypes = {
@@ -106,7 +166,7 @@ DetailsBreakdown.propTypes = {
           nh3: PropTypes.number.isRequired,
           no: PropTypes.number.isRequired,
         }).isRequired,
-      })
+      }),
     ),
   }),
 };
