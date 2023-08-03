@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import DetailsBreakdown from './DetailsBreakdown';
 import CHILE from '../redux/locationData';
 
+import './styles/Details.css'
 import { MdArrowBackIosNew } from 'react-icons/md';
 import { FaCity } from 'react-icons/fa';
 
@@ -53,6 +54,10 @@ const Details = () => {
         break;
     }
 
+    if (!airQualityData) {
+      airQuality = <i>loading</i>;
+    }
+
   return (
     <>
       <nav className="nav">
@@ -72,10 +77,11 @@ const Details = () => {
       </header>
       <main className="main">
         <div className="main__subtitle-container">
-          <h2 className="main__subtitle">Details</h2>
+          <h2 className="main__subtitle">Component</h2>
+          <h2 style={{'font-size': '1em'}}>μg/m<sup>3</sup></h2>
         </div>
         <section className="main__section">
-          <DetailsBreakdown />
+          <DetailsBreakdown data={airQualityData}/>
         </section>
       </main>
     </>

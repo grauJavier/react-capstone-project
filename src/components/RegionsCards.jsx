@@ -55,6 +55,10 @@ const RegionsCards = () => {
         break;
     }
 
+    if (!airQualityData) {
+      airQuality = <i>loading</i>;
+    }
+
     return (
       <Link to={`/details/${regionKey}/`} key={regionKey} className="region-card">
         <BsArrowRightCircle />
