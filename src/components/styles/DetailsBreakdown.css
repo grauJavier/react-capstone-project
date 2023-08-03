@@ -21,7 +21,6 @@
 }
 
 .component__subtitle-container {
-  background-color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;

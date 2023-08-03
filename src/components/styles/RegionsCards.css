@@ -1,3 +1,12 @@
+.region-card {
+  width: 50%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .region-card:nth-child(2),
 .region-card:nth-child(3),
 .region-card:nth-child(6),
@@ -7,15 +16,6 @@
 .region-card:nth-child(14),
 .region-card:nth-child(15) {
   background-color: var(--main-alt-color);
-}
-
-.region-card {
-  width: 50%;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .region-card svg {
