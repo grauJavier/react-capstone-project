@@ -26,7 +26,7 @@
 .region-card__stats-container {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   width: 100%;
 }
 
