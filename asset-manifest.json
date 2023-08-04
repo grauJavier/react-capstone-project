@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/grauJavier/react-capstone-project/tree/jest-test/static/css/main.ac730cc2.css",
+    "main.js": "/grauJavier/react-capstone-project/tree/jest-test/static/js/main.4e6580e1.js",
+    "index.html": "/grauJavier/react-capstone-project/tree/jest-test/index.html",
+    "main.ac730cc2.css.map": "/grauJavier/react-capstone-project/tree/jest-test/static/css/main.ac730cc2.css.map",
+    "main.4e6580e1.js.map": "/grauJavier/react-capstone-project/tree/jest-test/static/js/main.4e6580e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac730cc2.css",
+    "static/js/main.4e6580e1.js"
+  ]
+}
