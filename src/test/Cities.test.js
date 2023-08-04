@@ -1,52 +1,70 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
-import configureMockStore from 'redux-mock-store';
-import Regions from '../components/Regions';
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
+import Cities from '../components/Cities';
 
-jest.mock('../redux/locationData', () => ({
-  country: {
-    img: 'path/to/image',
-    name: 'Chile',
+window.scrollTo = jest.fn();
+
+const CHILE = {
+  reg2: {
+    reg_nr: 'I',
+    name: 'Región de Tarapacá',
+    name_short: 'Tarapacá',
+    img: '/assets/chile_region2_tarapaca.png',
+    capital: {
+      name: 'Iquique',
+      lat: -20.2167,
+      lon: -70.15,
+    },
+    cities: {
+      'Alto Hospicio': { lat: -20.25, lon: -70.1167 },
+      // Para mas data si se quiere
+    },
   },
-}));
+};
 
-const mockStore = configureMockStore();
-const initialState = {};
-const store = mockStore(initialState);
+jest.mock('../redux/locationData', () => CHILE);
 
-describe('Regions Component', () => {
-  test('renders Regions component with correct elements', () => {
+describe('<Cities />', () => {
+  it('should render the cities component with correct data', () => {
+    const mockStore = configureStore();
+    const initialState = {
+      airQuality: {
+        location: {
+          '-20.2167,-70.15': {
+            list: [
+              {
+                main: {
+                  aqi: 1,
+                },
+              },
+            ],
+          },
+        },
+      },
+    };
+    const store = mockStore(initialState);
+
     render(
       <Provider store={store}>
-        <Regions />
+        <MemoryRouter initialEntries={['/cities/reg2']}>
+          <Routes>
+            <Route path="/cities/:name" element={<Cities />} />
+          </Routes>
+        </MemoryRouter>
       </Provider>,
     );
 
-    const navTitleElement = screen.getByText(/Air/i);
-    const h2Element = screen.getByText(/Stats/i);
-    expect(navTitleElement).toBeInTheDocument();
-    expect(h2Element).toBeInTheDocument();
-
-    const subtitleElement = screen.getByText(/Stats by Region/i);
-    expect(subtitleElement).toBeInTheDocument();
-
-    expect(screen.container).toMatchSnapshot();
+    expect(screen.getByText(/I Región de Tarapacá/)).toBeInTheDocument();
+    expect(screen.getByText(/Air Pollution - Chile - Cities/)).toBeInTheDocument();
+    expect(screen.getByText(/Air Quality\s*·\s*Good/)).toBeInTheDocument();
+    expect(screen.getByAltText('Tarapacá')).toHaveAttribute('src', '/assets/chile_region2_tarapaca.png');
+    expect(screen.getByText('Stats by City')).toBeInTheDocument();
   });
 
-  test('renders H2 elements with correct text', () => {
-    render(
-      <Provider store={store}>
-        <Regions />
-      </Provider>,
-    );
-
-    const h2Element = screen.getByText(/Stats/i);
-    expect(h2Element).toBeInTheDocument();
-
-    const subtitleElement = screen.getByText(/Stats by Region/i);
-    expect(subtitleElement).toBeInTheDocument();
-
-    expect(screen.container).toMatchSnapshot();
+  afterEach(() => {
+    jest.resetAllMocks();
   });
 });
