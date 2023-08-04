@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/grauJavier/react-capstone-project/static/css/main.ac730cc2.css",
-    "main.js": "/grauJavier/react-capstone-project/static/js/main.4e6580e1.js",
-    "index.html": "/grauJavier/react-capstone-project/index.html",
-    "main.ac730cc2.css.map": "/grauJavier/react-capstone-project/static/css/main.ac730cc2.css.map",
-    "main.4e6580e1.js.map": "/grauJavier/react-capstone-project/static/js/main.4e6580e1.js.map"
+    "main.css": "/react-capstone-project/static/css/main.15150b44.css",
+    "main.js": "/react-capstone-project/static/js/main.4e6580e1.js",
+    "index.html": "/react-capstone-project/index.html",
+    "main.15150b44.css.map": "/react-capstone-project/static/css/main.15150b44.css.map",
+    "main.4e6580e1.js.map": "/react-capstone-project/static/js/main.4e6580e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac730cc2.css",
+    "static/css/main.15150b44.css",
     "static/js/main.4e6580e1.js"
   ]
 }
