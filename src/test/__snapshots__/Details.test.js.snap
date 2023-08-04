@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsBreakdown Component renders components when Nitric Oxide is available 1`] = `undefined`;
+
+exports[`DetailsBreakdown Component renders components when Nitrogen Dioxide is available 1`] = `undefined`;
+
+exports[`DetailsBreakdown Component renders components with their respective data when data is available 1`] = `undefined`;
