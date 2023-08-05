@@ -1,0 +1,11 @@
+.cities-list__item {
+  width: 100%;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cities-list__item:nth-child(even) {
+  background-color: var(--main-alt-color);
+}

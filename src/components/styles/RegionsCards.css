@@ -1,0 +1,42 @@
+.region-card {
+  width: 50%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.region-card:is(:nth-child(4n + 2), :nth-child(4n + 3)) {
+  background-color: var(--main-alt-color);
+}
+
+.region-card svg {
+  align-self: flex-end;
+}
+
+.region-card__img {
+  max-height: 7em;
+  max-width: 7em;
+  opacity: 0.5;
+  margin-bottom: 2em;
+  margin-top: -1em;
+}
+
+.region-card__stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.region-card__name {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.region-card__stats {
+  font-family: var(--control-font);
+  font-weight: 200;
+  text-align: right;
+}
