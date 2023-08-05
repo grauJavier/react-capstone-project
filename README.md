@@ -82,11 +82,11 @@
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## 💻 Getting Started <a href="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites <a name="#prerequisites"></a>
+### Prerequisites <a href="#prerequisites"></a>
 
 In order to run this project you need:
 
@@ -97,7 +97,7 @@ In order to run this project you need:
     <li><p>Git and a GitHub account</p></li>
 </ul>
 
-### Setup <a name="#setup"></a>
+### Setup <a href="#setup"></a>
 
 Clone this repository to your desired folder by using this 👇️ command :
 
@@ -105,7 +105,7 @@ Clone this repository to your desired folder by using this 👇️ command :
 git clone https://github.com/grauJavier/react-capstone-project.git
 ```
 
-### Install <a name="#install"></a>
+### Install <a href="#install"></a>
 
 Install this project with:
 
@@ -113,19 +113,19 @@ Install this project with:
  npm install
 ```
 
-### Usage <a name="#usage"></a>
+### Usage <a href="#usage"></a>
 
 ```
  npm start
 ```
 
-### Run tests <a name="#run-tests"></a>
+### Run tests <a href="#run-tests"></a>
 
 ```
  npm test
 ```
 
-### Deployment <a name="#triangular_flag_on_post-deployment"></a>
+### Deployment <a href="#triangular_flag_on_post-deployment"></a>
 
 - Active Link [https://airmetrix.netlify.app/](https://airmetrix.netlify.app/).
 
