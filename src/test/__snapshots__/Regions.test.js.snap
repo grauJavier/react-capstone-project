@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Regions Component renders H2 elements with correct text 1`] = `undefined`;
-
-exports[`Regions Component renders Regions component with correct elements 1`] = `undefined`;

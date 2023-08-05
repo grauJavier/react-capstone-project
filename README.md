@@ -73,11 +73,8 @@
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<!--
-- 🎤 [Project presentation: video demo](https://drive.google.com/file/d/1-eSDabquIJCbvbQblqBPvSwbDIvaRfIb/view?usp=sharing)
--->
-- [Live Demo Link](https://space-travelers-hub-jxxr.onrender.com)
 
+- 🎤 Project presentation: [Video demo](https://www.loom.com/share/ab64037dea434681abd707d75ee1817e?sid=d1c3fbe4-5f88-448d-8ba9-b42b4d31d34b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,8 +125,126 @@ Install this project with:
  npm test
 ```
 
-### Deployment
+## 💻 Getting Started <a name="getting-started"></a>
 
+To get a local copy up and running, follow these steps.
+
+### Prerequisites <a name="#prerequisites"></a>
+
+In order to run this project you need:
+
+<ul>
+    <li><p>A modern browser (supports html5)</p></li>
+</ul>
+<ul>
+    <li><p>Git and a GitHub account</p></li>
+</ul>
+
+### Setup <a name="#setup"></a>
+
+Clone this repository to your desired folder by using this 👇️ command :
+
+```
+git clone https://github.com/grauJavier/react-capstone-project.git
+```
+
+### Install <a name="#install"></a>
+
+Install this project with:
+
+```
+ npm install
+```
+
+### Usage <a name="#usage"></a>
+
+```
+ npm start
+```
+
+### Run tests <a name="#run-tests"></a>
+
+```
+ npm test
+```
+
+### Deployment <a name="#triangular_flag_on_post-deployment"></a>
+
+- Active Link [https://airmetrix.netlify.app/](https://airmetrix.netlify.app/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Javier Grau**
+- GitHub: [@grauJavier](https://github.com/grauJavier)
+- Twitter: [@jgrauchile](https://twitter.com/jgrauchile)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/javiergrau)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+We welcome contributions to enhance AirMetrics and expand its capabilities. To contribute:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature: `git checkout -b feature-new-feature`.
+
+3. Commit your changes: `git commit -m 'Add new feature'`.
+
+4. Push to the branch: `git push origin feature-new-feature`.
+
+5. Open a pull request detailing your changes.
+
+Let's work together to provide valuable air quality information to the people of Chile!
+
+Also issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Ruthmy/capstone-react/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project and know someone who might find it helpful, please share it.
+Or give it a **star** ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+=======
 - Not aplicable.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

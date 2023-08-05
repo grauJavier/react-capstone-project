@@ -75,8 +75,7 @@ const Details = () => {
         <div>
           <h3 className="header__name">{data.city}</h3>
           <h4 className="header__stats">
-            Air Quality ·
-            {airQuality}
+            {`Air Quality · ${airQuality}`}
           </h4>
         </div>
       </header>

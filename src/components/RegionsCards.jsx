@@ -29,7 +29,8 @@ const RegionsCards = () => {
   const AirQualityData = (latitude, longitude) => useSelector((state) => state.airQuality.location[`${latitude},${longitude}`]);
 
   const output = region.slice(1).map((regionKey) => {
-    const { img, nameShort } = CHILE[regionKey];
+    const { img } = CHILE[regionKey];
+    const nameShort = CHILE[regionKey].name_short;
     const latitude = CHILE[regionKey].capital.lat;
     const longitude = CHILE[regionKey].capital.lon;
 
@@ -70,8 +71,7 @@ const RegionsCards = () => {
         <div className="region-card__stats-container">
           <h3 className="region-card__name">{nameShort}</h3>
           <h4 className="region-card__stats">
-            Air Quality ·
-            {airQuality}
+            {`Air Quality · ${airQuality}`}
           </h4>
         </div>
       </Link>

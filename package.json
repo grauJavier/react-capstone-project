@@ -25,6 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "serve": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -49,7 +50,9 @@
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/eslint-parser": "^7.22.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-syntax-jsx": "^7.22.5",
+    "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
