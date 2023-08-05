@@ -71,8 +71,7 @@ const RegionsCards = () => {
         <div className="region-card__stats-container">
           <h3 className="region-card__name">{nameShort}</h3>
           <h4 className="region-card__stats">
-            Air Quality ·
-            {airQuality}
+            {`Air Quality · ${airQuality}`}
           </h4>
         </div>
       </Link>

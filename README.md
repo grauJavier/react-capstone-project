@@ -73,11 +73,8 @@
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<!--
-- 🎤 [Project presentation: video demo](https://drive.google.com/file/d/1-eSDabquIJCbvbQblqBPvSwbDIvaRfIb/view?usp=sharing)
--->
-- [Live Demo Link](https://space-travelers-hub-jxxr.onrender.com)
 
+- 🎤 Project presentation: [Video demo](https://www.loom.com/share/ab64037dea434681abd707d75ee1817e?sid=d1c3fbe4-5f88-448d-8ba9-b42b4d31d34b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +127,7 @@ Install this project with:
 
 ### Deployment
 
-- Not aplicable.
+- Active Link [https://airmetrix.netlify.app/](https://airmetrix.netlify.app/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,7 +187,7 @@ Or give it a **star** ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I thank Microverse for this fantastic opportunity, and the code reviewers for their advice and time.
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
