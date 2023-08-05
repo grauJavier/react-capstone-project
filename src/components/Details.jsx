@@ -27,6 +27,7 @@ const Details = () => {
     };
 
     fetchAirQualityData();
+    // eslint-disable-next-line
   }, []);
 
   const airQualityData = useSelector(

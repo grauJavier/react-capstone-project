@@ -23,6 +23,7 @@ const RegionsCards = () => {
     };
 
     fetchAirQualityData();
+    // eslint-disable-next-line
   }, []);
 
   const AirQualityData = (latitude, longitude) => useSelector((state) => state.airQuality.location[`${latitude},${longitude}`]);
