@@ -27,7 +27,7 @@ const Details = () => {
     };
 
     fetchAirQualityData();
-  }, []);
+  }, []); // eslint-disable-line
 
   const airQualityData = useSelector(
     (state) => state.airQuality.location[`${latitude},${longitude}`],
