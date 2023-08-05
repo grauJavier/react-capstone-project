@@ -86,6 +86,49 @@
 
 To get a local copy up and running, follow these steps.
 
+### Prerequisites
+
+In order to run this project you need:
+
+<ul>
+    <li><p>A modern browser (supports html5)</p></li>
+</ul>
+<ul>
+    <li><p>Git and a GitHub account</p></li>
+</ul>
+
+### Setup
+
+Clone this repository to your desired folder by using this 👇️ command :
+
+```
+git clone https://github.com/grauJavier/react-capstone-project.git
+```
+
+### Install
+
+Install this project with:
+
+```
+ npm install
+```
+
+### Usage
+
+```
+ npm start
+```
+
+### Run tests
+
+```
+ npm test
+```
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
 ### Prerequisites <a name="#prerequisites"></a>
 
 In order to run this project you need:
@@ -188,6 +231,81 @@ Or give it a **star** ⭐️
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+=======
+- Not aplicable.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Javier Grau**
+- GitHub: [@grauJavier](https://github.com/grauJavier)
+- Twitter: [@jgrauchile](https://twitter.com/jgrauchile)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/javiergrau)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+We welcome contributions to enhance AirMetrics and expand its capabilities. To contribute:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature: `git checkout -b feature-new-feature`.
+
+3. Commit your changes: `git commit -m 'Add new feature'`.
+
+4. Push to the branch: `git push origin feature-new-feature`.
+
+5. Open a pull request detailing your changes.
+
+Let's work together to provide valuable air quality information to the people of Chile!
+
+Also issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Ruthmy/capstone-react/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project and know someone who might find it helpful, please share it.
+Or give it a **star** ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I thank Microverse for this fantastic opportunity, and the code reviewers for their advice and time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

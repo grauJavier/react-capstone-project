@@ -7,14 +7,7 @@
   justify-content: space-around;
 }
 
-.region-card:nth-child(2),
-.region-card:nth-child(3),
-.region-card:nth-child(6),
-.region-card:nth-child(7),
-.region-card:nth-child(10),
-.region-card:nth-child(11),
-.region-card:nth-child(14),
-.region-card:nth-child(15) {
+.region-card:is(:nth-child(4n + 2), :nth-child(4n + 3)) {
   background-color: var(--main-alt-color);
 }
 
