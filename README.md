@@ -170,7 +170,7 @@ Install this project with:
 
 ### Deployment <a name="#triangular_flag_on_post-deployment"></a>
 
-- Active Link [https://airmetrix.netlify.app/](https://airmetrix.netlify.app/).
+- Active Link [https://airmetrix.netlify.app/](https://64cdcd062dcbec0008cc0344--airmetrix.netlify.app/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
