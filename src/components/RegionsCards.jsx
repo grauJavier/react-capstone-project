@@ -23,12 +23,13 @@ const RegionsCards = () => {
     };
 
     fetchAirQualityData();
-  }, []); // eslint-disable-line
+  }, []);
 
   const AirQualityData = (latitude, longitude) => useSelector((state) => state.airQuality.location[`${latitude},${longitude}`]);
 
   const output = region.slice(1).map((regionKey) => {
-    const { img, nameShort } = CHILE[regionKey];
+    const { img } = CHILE[regionKey];
+    const nameShort = CHILE[regionKey].name_short;
     const latitude = CHILE[regionKey].capital.lat;
     const longitude = CHILE[regionKey].capital.lon;
 
